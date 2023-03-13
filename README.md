@@ -17,3 +17,9 @@ Icon Packs that you can import!
 ![image](https://user-images.githubusercontent.com/86447165/224624512-74ca8bf8-e347-4474-94b0-a4d648abc0b8.png)
 
 and, much, much more!
+
+## Third-party Resources
+This program uses a couple of resources:   
+* IconExtractor.dll (https://github.com/pierresprim/IconExtractor)
+* IconUtilities (https://github.com/Nickelony/IconUtilities)
+* Newtonsoft.JSON (https://www.newtonsoft.com/json)
