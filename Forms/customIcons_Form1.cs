@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.IO.Compression;
+using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 using customIcons.Exceptions;
@@ -272,6 +273,38 @@ namespace customIcons.Forms
                         Process.Start($@"{Environment.GetEnvironmentVariable("systemroot")}\sysnative\cmd.exe",
                             "/c start explorer.exe & exit");
                     }
+                }
+                else
+                {
+                    if (!File.Exists(Environment.GetEnvironmentVariable("appdata") + "\\customIcons\\driveIconPatcher"))
+                    {
+                        try
+                        {
+                            using (var client = new WebClient())
+                            {
+                                client.DownloadFile(
+                                    "https://github.com/customIcon/driveIconPatcher/releases/latest/download/driveIconPatcherPortable.zip",
+                                    Environment.GetEnvironmentVariable("appdata") +
+                                    "\\customIcons\\driveIconPatcher.zip");
+                            }
+
+                            using (var zip = ZipFile.OpenRead(Environment.GetEnvironmentVariable("appdata") +
+                                                              "\\customIcons\\driveIconPatcher.zip"))
+                            {
+                                zip.ExtractToDirectory(Environment.GetEnvironmentVariable("appdata") +
+                                                       "\\customIcons\\driveIconPatcher");
+                            }
+
+                            File.Delete(Environment.GetEnvironmentVariable("appdata") +
+                                        "\\customIcons\\driveIconPatcher.zip");
+                        }
+                        catch (Exception)
+                        {
+                        }
+                    }
+
+                    Process.Start(Environment.GetEnvironmentVariable("appdata") + "\\customIcons\\driveIconPatcher\\driveIconPatcher.exe",
+                        $"{folderBrowserDialog1.SelectedPath} {listView1.SelectedItems[0].ToolTipText}\\{listView1.SelectedItems[0].Text}.ico");
                 }
             }
         }
