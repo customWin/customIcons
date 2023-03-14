@@ -49,6 +49,7 @@ namespace customIcons.Forms
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.getIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +72,7 @@ namespace customIcons.Forms
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importCustomIconsPackToolStripMenuItem,
+            this.getIconsToolStripMenuItem,
             this.preferencesToolStripMenuItem,
             this.aboutCustomIconsToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -219,6 +221,13 @@ namespace customIcons.Forms
             this.label3.TabIndex = 9;
             this.label3.Text = "There is no\r\npacks installed.";
             // 
+            // getIconsToolStripMenuItem
+            // 
+            this.getIconsToolStripMenuItem.Name = "getIconsToolStripMenuItem";
+            this.getIconsToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.getIconsToolStripMenuItem.Text = "Get icons";
+            this.getIconsToolStripMenuItem.Click += new System.EventHandler(this.getIconsToolStripMenuItem_Click);
+            // 
             // customIcons_Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,6 +277,7 @@ namespace customIcons.Forms
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem getIconsToolStripMenuItem;
     }
 }
 

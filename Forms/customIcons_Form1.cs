@@ -412,5 +412,11 @@ namespace customIcons.Forms
 
             loopAndAddFolders(ReadSetting("path"));
         }
+
+        private void getIconsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var store = new iconPackStore();
+            store.Show();
+        }
     }
 }
