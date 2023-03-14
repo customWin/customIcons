@@ -98,6 +98,13 @@
       <DependentUpon>cIPreferences.cs</DependentUpon>
     </Compile>
     <Compile Include="Exceptions\customIconPackException.cs" />
+    <Compile Include="Forms\iconPackStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\iconPackStore.Designer.cs">
+      <DependentUpon>iconPackStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Types\IconStorePack.cs" />
     <Compile Include="Types\customIconsManifest.cs" />
     <Compile Include="Forms\customIcons_Form1.cs">
       <SubType>Form</SubType>
@@ -128,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\customIcons_Form1.resx">
       <DependentUpon>customIcons_Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\iconPackStore.resx">
+      <DependentUpon>iconPackStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\iconViewerAndExtractor.resx">
       <DependentUpon>iconViewerAndExtractor.cs</DependentUpon>
