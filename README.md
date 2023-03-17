@@ -18,7 +18,7 @@ Icon Packs that you can import!
 
 and, much, much more!
 
-## There is a [wiki](/wiki)!
+## There is a [wiki](https://github.com/customIcon/customIcons/wiki)!
 
 ## Third-party Resources
 This program uses a couple of resources:   
