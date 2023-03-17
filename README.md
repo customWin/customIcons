@@ -18,6 +18,8 @@ Icon Packs that you can import!
 
 and, much, much more!
 
+## There is a [wiki](/wiki)!
+
 ## Third-party Resources
 This program uses a couple of resources:   
 * IconExtractor.dll (https://github.com/pierresprim/IconExtractor)
