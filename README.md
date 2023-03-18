@@ -1,6 +1,6 @@
 # customIcons
 A Windows 10/11 sophisicated icon changer, with humors!  
-We have a Discord Server! https://discord.gg/gyrNHAwHK8
+We have a Discord Server! https://discord.gg/MgY2hWURgK
 
 ![image](https://user-images.githubusercontent.com/86447165/224623882-e0e553c1-78ac-4598-8a4e-b4d620853dec.png)
 
