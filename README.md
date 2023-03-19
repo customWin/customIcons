@@ -1,6 +1,6 @@
 # customIcons
 A Windows 10/11 sophisicated icon changer, with humors!  
-![Discord Banner](https://discordapp.com/api/guilds/1086162268816945272/widget.png?style=banner3)
+[![Discord Banner](https://discordapp.com/api/guilds/1086162268816945272/widget.png?style=banner3)](https://discord.gg/MgY2hWURgK)
 
 ![image](https://user-images.githubusercontent.com/86447165/224623882-e0e553c1-78ac-4598-8a4e-b4d620853dec.png)
 
